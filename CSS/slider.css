@@ -1,0 +1,56 @@
+
+.fade-slider {
+    width: 100%;
+    max-width: 2000px; /* Ancho máximo solicitado */
+    height: 500px;     /* Alto solicitado */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Todas ocultas por defecto */
+    animation: fadeAnimation 20s infinite linear;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste perfecto para 2000x500 */
+}
+
+/* Retrasos calculados para 5 imágenes (20s / 5 = 4s por imagen) */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(4) { animation-delay: 12s; }
+.slide:nth-child(5) { animation-delay: 16s; }
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1; /* Aparece rápido al inicio de su turno */
+    }
+    20% {
+        opacity: 1; /* Se mantiene visible durante el 20% del tiempo total */
+    }
+    25% {
+        opacity: 0; /* Se desvanece para dar paso a la siguiente */
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Pausar al pasar el mouse */
+.fade-slider:hover .slide {
+    animation-play-state: paused;
+}
