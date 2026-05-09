@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.contenedor-formulario {
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    padding:50px ;
+}
+
+.encabezado-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.encabezado-form h2 {
+    color: #1a3a5f;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.encabezado-form p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Diseño de los campos */
+.grupo-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a3a5f;
+    margin-bottom: 8px;
+}
+
+.grupo-input input, 
+.grupo-input select, 
+.grupo-input textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus, 
+.grupo-input textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Fila doble para pantallas grandes */
+.fila-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Botón elegante */
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a3a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #007bff;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .fila-doble {
+        grid-template-columns: 1fr;
+    }
+    
+    .contenedor-formulario {
+        padding: 25px;
+    }
+}

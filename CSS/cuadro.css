@@ -1,0 +1,75 @@
+
+
+/* Contenedor para centrar el cuadro en toda la pantalla */
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    padding: 50px;
+}
+
+/* El cuadro con medida del 50% */
+.cuadro-relajante {
+    width: 50%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-left: 5px solid #1a3a5f; /* Azul oscuro elegante */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    
+    /* Animación de entrada */
+    animation: fadeIn 2s ease-out;
+}
+
+.frase {
+    font-size: 1.5rem;
+    color: #334e68;
+    line-height: 1.6;
+    font-style: italic;
+    animation: breathing 4s ease-in-out infinite;
+}
+
+/* Adorno minimalista */
+.adorno {
+    margin-top: 20px;
+    height: 2px;
+    width: 50px;
+    background-color: #007bff;
+    display: inline-block;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto sutil de respiración */
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .cuadro-relajante {
+        width: 80%; /* En móviles el 50% sería muy estrecho */
+        padding: 20px;
+    }
+    .frase {
+        font-size: 1.2rem;
+    }
+}
