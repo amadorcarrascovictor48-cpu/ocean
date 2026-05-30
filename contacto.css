@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Fondo azul grisáceo muy suave */
+    padding: 60px 20px;
+}
+
+.seccion-contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* Grid Principal: Divide la pantalla en Info (Izquierda) y Mapa (Derecha) */
+.grid-principal {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(26, 58, 95, 0.06);
+}
+
+/* Sección de Información */
+.bloque-info {
+    padding: 50px;
+}
+
+.encabezado-contacto {
+    margin-bottom: 40px;
+}
+
+.encabezado-contacto span {
+    color: #007bff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.encabezado-contacto h2 {
+    color: #1a3a5f;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.encabezado-contacto p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Sub-Grid: Divide las tarjetas en 2x2 */
+.sub-grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-contacto {
+    background-color: #f8f9fa;
+    border-left: 4px solid #1a3a5f; /* Detalle elegante en azul oscuro */
+    padding: 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-contacto:hover {
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1);
+    transform: translateY(-3px);
+    border-left-color: #007bff; /* Cambia a azul claro en hover */
+}
+
+.icono-contacto {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contacto h3 {
+    color: #1a3a5f;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.tarjeta-contacto p {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.tarjeta-contacto .nota {
+    color: #888;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Bloque del Mapa / Imagen */
+.bloque-mapa {
+    background-image: url('IMAGENES/Gemini_Generated_Image_i2h2fti2h2fti2h2.png'); /* Imagen de fondo elegante o captura de mapa */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 400px;
+}
+
+/* Capa informativa flotando sobre el mapa simulado */
+.capa-mapa {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 3px solid #007bff;
+}
+
+.marcador {
+    font-size: 2rem;
+}
+
+.capa-mapa p {
+    color: #1a3a5f;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .grid-principal {
+        grid-template-columns: 1fr; /* Una sola columna principal en tabletas */
+    }
+    
+    .bloque-mapa {
+        height: 350px; /* Controlamos la altura del mapa al pasar abajo */
+    }
+}
+
+@media (max-width: 550px) {
+    .bloque-info {
+        padding: 30px 20px;
+    }
+    
+    .sub-grid-tarjetas {
+        grid-template-columns: 1fr; /* Las tarjetas se apilan una por una en celulares */
+    }
+}
