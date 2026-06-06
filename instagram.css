@@ -1,0 +1,26 @@
+.b-ins{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+bottom: 150px;
+right: 20px;
+background-color: #ff75ed;
+color: #ffffff;
+border-radius: 50px;
+text-align: center;
+box-shadow: 2px 2px 3px black;
+z-index: 100;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+transition: ease all 0.3s;
+}
+.b-ins:hover{
+    background-color: rgb(224, 98, 255);
+    transform: scale(1.1);
+}
+.b-ins img{
+    width: 50px;
+    height: 50px;
+}
