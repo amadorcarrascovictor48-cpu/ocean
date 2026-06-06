@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="CSS/pie de pag.css">
+    <link rel="stylesheet" href="boton.css">
+    <link rel="stylesheet" href="facebook.css">
+    <link rel="stylesheet" href="instagram.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">OCE<span>AN</span></a>
+            </div>
+
+
+
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <span class="menu-icon">&#9776;</span>
+                <span class="close-icon">&#10006;</span>
+            </label>
+
+            <ul class="nav-links">
+                <li style="--i:1;"><a href="index.html">Inicio</a></li>
+                <li style="--i:2;"><a href="#">Sobre Nosotros</a></li>
+                <li style="--i:3;"><a href="agendarcita.html">Agendar Cita</a></li>
+                <li style="--i:4;"><a href="contacto.html">Contacto</a></li>
+                <li style="--i:5;"><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="seccion-nosotros">
+  <section class="banner-imagen-fija">
+        </section>
+
+
+
+    
+<div class="bloque-nosotros destacado">
+                <div class="contenido">
+                    <span>Nuestra Esencia</span>
+                    <h2>Un santuario creado para tu bienestar</h2>
+                    <p>Nació con la visión de fusionar técnicas terapéuticas ancestrales con la ciencia del cuidado moderno. Nos dedicamos a desconectar el ruido del mundo exterior para reconectar tu paz interior. "Donde el conocimiento científico y la sabiduría del pasado se unen para crear un santuario de calma absoluta. Tu espacio para silenciar la mente y renovar el ser."</p>
+                </div>
+            </div>
+
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide"><img src="imagenesdegrid/Gemini_Generated_Image_c6dfw0c6dfw0c6df.png" alt="Instalaciones 1"></div>
+                <div class="slide"><img src="imagenesdegrid/Gemini_Generated_Image_s35l8ks35l8ks35l.png" alt="Instalaciones 2"></div>
+                <div class="slide"><img src="imagenesdegrid/Gemini_Generated_Image_y6ypeay6ypeay6yp.png" alt="Instalaciones 3"></div>
+                <div class="slide"><img src="imagenesdegrid/Gemini_Generated_Image_yt66lbyt66lbyt66.png" alt="Instalaciones 4"></div>
+            </div>
+        </div>
+        <div class="contenedor-grid">
+            
+            <div class="bloque-nosotros">
+                <div class="contenido">
+                    <div class="icono">🌿</div>
+                    <h3>Filosofía Integral</h3>
+                    <p>Creemos que la verdadera belleza y salud nacen del equilibrio perfecto entre cuerpo, mente y espíritu.</p>
+                </div>
+            </div>
+
+            <div class="bloque-nosotros">
+                <div class="contenido">
+                    <div class="icono">✨</div>
+                    <h3>Especialistas</h3>
+                    <p>Nuestro equipo está conformado por terapeutas certificados comprometidos con un servicio personalizado y empático.</p>
+                </div>
+            </div>
+
+            <div class="bloque-nosotros">
+                <div class="contenido">
+                    <div class="icono">🌊</div>
+                    <h3>Atmósfera Premium</h3>
+                    <p>Cada rincón de nuestras instalaciones está diseñado bajo principios de aromaterapia y acústica zen.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<a href="https://api.whatsapp.com/send?phone=521234567890&text=Hola!%20Me%20gustaría%20recibir%20más%20información." class="boton" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<a href="https://www.facebook.com/" class="b-fa" target="_blank">
+    <img src="iconos/icons8-facebook-nuevo.svg" alt="Facebook">
+</a>
+
+<a href="https://www.instagram.com/?hl=es" class="b-ins" target="_blank">
+    <img src="iconos/icons8-instagram.svg" alt="Instagram">
+</a>
+
+
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+        const totalSlides = slides.length;
+
+        function nextSlide() {
+            index++;
+            if (index >= totalSlides) {
+                index = 0; // Regresa a la primera imagen
+            }
+            // Mueve el track horizontalmente basado en el índice actual
+            track.style.transform = `translateX(-${index * 25}%)`;
+        }
+
+        // Cambia de imagen automáticamente cada 4 segundos (4000ms)
+        setInterval(nextSlide, 4000);
+    });
+
+</script>
+    
+
+    
+</body>
+
+<footer class="footer-spa">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-logo">OCE<span>AN</span></h2>
+                <p>Un refugio de paz diseñado para revitalizar tu cuerpo y serenar tu mente. Expertos en bienestar integral.</p>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Agendar Cita</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>📍 Calle Serenidad #123, Ciudad Bienestar</p>
+                <p>📞Telefono: +52 55 1234 5678</p>
+                <p>✉️ Correo: @OCEAN.com</p>
+                <div class="horarios">
+                    <p><strong>Lunes a Viernes:</strong> 09:00 - 20:00</p>
+                    <p><strong>Sábados:</strong> 10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 OCEAN. Victor Amador Carrasco. | <a href="#">Instituto de Compuinglés de Oriente</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+</html>

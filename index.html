@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Elegante - Responsivo</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/cuadro.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/formulario1.css">
+    <link rel="stylesheet" href="CSS/pie de pag.css">
+    <link rel="stylesheet" href="boton.css">
+    <link rel="stylesheet" href="facebook.css">
+    <link rel="stylesheet" href="instagram.css">
+</head>
+<body>
+
+<div class="fade-slider">
+        <div class="slide" style="--i:1;">
+            <img src="IMAGENES/Gemini_Generated_Image_6lf056lf056lf056.png" alt="Slide 1">
+        </div>
+        <div class="slide" style="--i:2;">
+            <img src="IMAGENES/Gemini_Generated_Image_dlwvy1dlwvy1dlwv.png" alt="Slide 2">
+        </div>
+        <div class="slide" style="--i:3;">
+            <img src="IMAGENES/Gemini_Generated_Image_fqtfmxfqtfmxfqtf.png" alt="Slide 3">
+        </div>
+        <div class="slide" style="--i:4;">
+            <img src="IMAGENES/Gemini_Generated_Image_xc5oq6xc5oq6xc5o.png" alt="Slide 4">
+        </div>
+        <div class="slide" style="--i:5;">
+            <img src="IMAGENES/Gemini_Generated_Image_5kmh4k5kmh4k5kmh.png" alt="Slide 5">
+        </div>
+    </div>
+
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">OCE<span>AN</span></a>
+            </div>
+
+
+
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <span class="menu-icon">&#9776;</span>
+                <span class="close-icon">&#10006;</span>
+            </label>
+
+            <ul class="nav-links">
+                <li style="--i:1;"><a href="#">Inicio</a></li>
+                <li style="--i:2;"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li style="--i:3;"><a href="agendarcita.html">Agendar Cita</a></li>
+                <li style="--i:4;"><a href="contacto.html">Contacto</a></li>
+                <li style="--i:5;"><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="contenedor-principal">
+        <div class="cuadro-relajante">
+            <p class="frase">
+                "A veces lo más valiente que puedes hacer es permitirte un momento de paz y recordar que no tienes que ser perfecto para ser extraordinario."
+            </p>
+            <div class="adorno"></div>
+        </div>
+     
+    </main>
+
+     <section class="grid-spa">
+        <div class="servicio-row">
+            <div class="info">
+                <span>01</span>
+                <h3>MASAJES TERAPEUTICOS</h3>
+                <p>Técnicas ancestrales para liberar tensiones y restaurar el equilibrio físico.</p>
+            </div>
+            <div class="foto">
+                <img src="imagenesdegrid/Gemini_Generated_Image_y6ypeay6ypeay6yp.png" alt="Masajes">
+            </div>
+        </div>
+
+        <div class="servicio-row">
+            <div class="info">
+                <span>02</span>
+                <h3>RITUALES FACIALES</h3>
+                <p>Tratamientos personalizados que devuelven la luminosidad y frescura a tu rostro.</p>
+            </div>
+            <div class="foto">
+                <img src="imagenesdegrid/Gemini_Generated_Image_c6dfw0c6dfw0c6df.png" alt="Faciales">
+            </div>
+        </div>
+
+        <div class="servicio-row">
+            <div class="info">
+                <span>03</span>
+                <h3>HIDROTERAPIA</h3>
+                <p>Sumérgete en la calma absoluta con nuestros circuitos de agua y aceites esenciales.</p>
+            </div>
+            <div class="foto">
+                <img src="imagenesdegrid/Gemini_Generated_Image_yt66lbyt66lbyt66.png" alt="Hidroterapia">
+            </div>
+        </div>
+
+        <div class="servicio-row">
+            <div class="info">
+                <span>04</span>
+                <h3>CUIDADO CORPORAL</h3>
+                <p>Exfoliaciones y envolventes que nutren tu piel y revitalizan tus sentidos.</p>
+            </div>
+            <div class="foto">
+                <img src="imagenesdegrid/Gemini_Generated_Image_s35l8ks35l8ks35l.png" alt="Corporal">
+            </div>
+        </div>
+    </section>
+<center>
+<section class="seccion-formulario">
+        <div class="contenedor-formulario">
+            <div class="encabezado-form">
+                <h2>Reserva tu Experiencia</h2>
+                <p>Completa los datos y nos pondremos en contacto contigo.</p>
+            </div>
+
+            <form action="#">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ej. Ana García" required>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="grupo-input">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="55 1234 5678">
+                    </div>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="grupo-input">
+                        <label for="fecha">Fecha Deseada</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="servicio">Servicio</label>
+                        <select id="servicio">
+                            <option value="masaje">Masaje Terapéutico</option>
+                            <option value="facial">Ritual Facial</option>
+                            <option value="hidro">Hidroterapia</option>
+                            <option value="corporal">Cuidado Corporal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensaje">Notas adicionales</label>
+                    <textarea id="mensaje" rows="4" placeholder="¿Alguna alergia o preferencia?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar Cita</button>
+            </form>
+        </div>
+    </section>
+</center>
+
+
+<a href="https://api.whatsapp.com/send?phone=521234567890&text=Hola!%20Me%20gustaría%20recibir%20más%20información." class="boton" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<a href="https://www.facebook.com/" class="b-fa" target="_blank">
+    <img src="iconos/icons8-facebook-nuevo.svg" alt="Facebook">
+</a>
+
+<a href="https://www.instagram.com/?hl=es" class="b-ins" target="_blank">
+    <img src="iconos/icons8-instagram.svg" alt="Instagram">
+</a>
+
+
+</body>
+
+<footer class="footer-spa">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-logo">OCE<span>AN</span></h2>
+                <p>Un refugio de paz diseñado para revitalizar tu cuerpo y serenar tu mente. Expertos en bienestar integral.</p>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Agendar Cita</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>📍 Calle Serenidad #123, Ciudad Bienestar</p>
+                <p>📞Telefono: +52 55 1234 5678</p>
+                <p>✉️ Correo: @OCEAN.com</p>
+                <div class="horarios">
+                    <p><strong>Lunes a Viernes:</strong> 09:00 - 20:00</p>
+                    <p><strong>Sábados:</strong> 10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 OCEAN. Victor Amador Carrasco. | <a href="#">Instituto de Compuinglés de Oriente</a></p>
+        </div>
+    </footer>
+</html>

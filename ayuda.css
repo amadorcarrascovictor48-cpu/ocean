@@ -1,0 +1,111 @@
+
+
+.seccion-ayuda {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* Encabezado Principal */
+.encabezado-ayuda {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.encabezado-ayuda span {
+    color: #007bff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.encabezado-ayuda h2 {
+    color: #1a3a5f;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.encabezado-ayuda p {
+    color: #556b82;
+    font-size: 1.05rem;
+}
+
+/* Estructura del Grid (2 columnas x 2 filas por defecto) */
+.grid-ayuda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Tarjetas de Ayuda */
+.tarjeta-ayuda {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(26, 58, 95, 0.03);
+    border: 1px solid rgba(0, 123, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-ayuda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(26, 58, 95, 0.08);
+    border-color: #007bff;
+}
+
+.icono-ayuda {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    background-color: #f0f4f8;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.tarjeta-ayuda h3 {
+    color: #1a3a5f;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.tarjeta-ayuda p {
+    color: #66788a;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Empuja el enlace hacia abajo para alinear las tarjetas */
+}
+
+/* Enlaces Internos */
+.enlace-ayuda {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.enlace-ayuda:hover {
+    color: #1a3a5f;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .grid-ayuda {
+        grid-template-columns: 1fr; /* Una sola columna en tabletas y móviles */
+        gap: 20px;
+    }
+    
+    .tarjeta-ayuda {
+        padding: 30px 20px;
+    }
+}
